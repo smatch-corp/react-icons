@@ -1,0 +1,42 @@
+{
+  "name": "@smatch-corp/react-icons",
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "package.json",
+    "README.md",
+    "dist"
+  ],
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "module": "./dist/esm/index.js",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "peerDependencies": {
+    "react": "^17 || ^18"
+  },
+  "devDependencies": {
+    "@ryyppy/rescript-promise": "^2.1.0",
+    "@svgr/core": "^6.5.1",
+    "@types/react": "^18.0.26",
+    "isomorphic-fetch": "^3.0.0",
+    "react": "^18.2.0",
+    "rescript": "10.1",
+    "rescript-json": "^1.0.3",
+    "typescript": "^4.9.3"
+  },
+  "scripts": {
+    "import": "node scripts/Main.mjs",
+    "build": "yarn build:cjs && yarn build:esm && yarn build:dts",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:dts": "tsc -p tsconfig.dts.json"
+  },
+  "packageManager": "yarn@3.3.0"
+}
