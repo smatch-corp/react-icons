@@ -12,7 +12,7 @@ async function run(param) {
   var data = await Curry._1(Figma.$$Request.QueryComponentsOrInstances.request, undefined);
   var result;
   if (data.TAG === /* Ok */0) {
-    var nodes = Js_dict.get(data._0.nodes, "1090:3551");
+    var nodes = Js_dict.get(data._0.nodes, process.env.FIGMA_ICON_FRAME_ID);
     result = nodes !== undefined ? nodes.components : Js_exn.raiseError("아이콘 프레임 노드에 접근할 수 없습니다.");
   } else {
     result = Js_exn.raiseError("아이콘 프레임 내의 컴포넌트나 인스턴스 정보를 가져올 수 없습니다.");

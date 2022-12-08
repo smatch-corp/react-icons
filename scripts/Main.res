@@ -1,7 +1,7 @@
 let run = async () => {
   let result = switch await Figma.Request.QueryComponentsOrInstances.request() {
   | Ok(data) =>
-    switch data.nodes->Js.Dict.get("1090:3551") {
+    switch data.nodes->Js.Dict.get(Env.figmaIconFrameId) {
     | Some(nodes) => nodes.components
     | _ => Js.Exn.raiseError("아이콘 프레임 노드에 접근할 수 없습니다.")
     }
