@@ -90,6 +90,7 @@ export { IconReplayRounded } from './IconReplayRounded.js';
 export { IconRuleRounded } from './IconRuleRounded.js';
 export { IconSaveDesigned } from './IconSaveDesigned.js';
 export { IconSentimentDissatisfiedRounded } from './IconSentimentDissatisfiedRounded.js';
+export { IconSentimentSatisfiedRounded } from './IconSentimentSatisfiedRounded.js';
 export { IconSentimentVeryDissatisfiedRounded } from './IconSentimentVeryDissatisfiedRounded.js';
 export { IconShareRounded } from './IconShareRounded.js';
 export { IconSmatchCorp } from './IconSmatchCorp.js';
