@@ -45,7 +45,14 @@ let convertToComponent = ((name, svg)) => {
 
   svg
   ->Svgr.transform(
-    Svgr.transformOption(~icon=true, ~jsxRuntime=#automatic, ~ref=true, ~typescript=true),
+    Svgr.transformOption(
+      ~icon=true,
+      ~jsxRuntime=#automatic,
+      ~ref=true,
+      ~typescript=true,
+      ~namedExport=name,
+      ~template=name->Svgr.template,
+    ),
   )
   ->thenResolve(svg => {
     svg
