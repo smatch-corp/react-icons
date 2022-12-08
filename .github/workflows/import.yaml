@@ -1,0 +1,34 @@
+name: Run import icons
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - run: yarn
+
+      - run: yarn import
+        id: import
+        env:
+          FIGMA_API_TOKEN: ${{ secrets.FIGMA_API_TOKEN }}
+          FIGMA_FILE_ID: ${{ secrets.FIGMA_FILE_ID }}
+          FIGMA_ICON_FRAME_ID: ${{ secrets.FIGMA_ICON_FRAME_ID }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          add-paths: |
+            src
+          commit-message: 'feat: import icons'
+          branch: import-icons
+          delete-branch: true
+          title: 'feat: Update Icons'
