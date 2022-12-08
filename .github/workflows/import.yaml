@@ -16,7 +16,9 @@ jobs:
 
       - run: yarn
 
-      - run: yarn import
+      - run: |
+          yarn import
+          yarn version minor --deferred
         id: import
         env:
           FIGMA_API_TOKEN: ${{ secrets.FIGMA_API_TOKEN }}
