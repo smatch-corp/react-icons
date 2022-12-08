@@ -22,7 +22,7 @@ jobs:
           yarn
           yarn version apply
           yarn npm publish
-        with:
+        env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
 
       - uses: EndBug/add-and-commit@v9
