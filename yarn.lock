@@ -2392,10 +2392,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rescript-json@npm:^1.0.3":
+"rescript-json@npm:1.0.3":
   version: 1.0.3
   resolution: "rescript-json@npm:1.0.3"
   checksum: 49aa95afda216dca32bd1241106e2ef99132b064a9d04f48f7e37cbbc5e72d98df3769352da25ac8504db61783f8bdffec2b01b43466647b9ab15be0f8328c6b
+  languageName: node
+  linkType: hard
+
+"rescript-json@patch:rescript-json@npm%3A1.0.3#./.yarn/patches/rescript-json-npm-1.0.3-9b8bcd0fa2.patch::locator=%40smatch-corp%2Freact-icons%40workspace%3A.":
+  version: 1.0.3
+  resolution: "rescript-json@patch:rescript-json@npm%3A1.0.3#./.yarn/patches/rescript-json-npm-1.0.3-9b8bcd0fa2.patch::version=1.0.3&hash=abcaa6&locator=%40smatch-corp%2Freact-icons%40workspace%3A."
+  checksum: 30b40c0211b663ef5d61e94b4a26ec7aee2026cfcd3c99ecf5a4a6c0fd5761314a6009b318cb4a40b1abce85c073e096c9e3b10298ef06ac021d3f25127419e9
   languageName: node
   linkType: hard
 

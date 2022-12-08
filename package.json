@@ -33,11 +33,14 @@
     "typescript": "^4.9.3"
   },
   "scripts": {
-    "import": "node scripts/Main.mjs",
+    "import": "rescript build -with-deps && node scripts/Main.mjs",
     "build": "yarn build:cjs && yarn build:esm && yarn build:dts",
     "build:esm": "tsc -p tsconfig.esm.json",
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "build:dts": "tsc -p tsconfig.dts.json"
   },
-  "packageManager": "yarn@3.3.0"
+  "packageManager": "yarn@3.3.0",
+  "resolutions": {
+    "rescript-json@^1.0.3": "patch:rescript-json@npm%3A1.0.3#./.yarn/patches/rescript-json-npm-1.0.3-9b8bcd0fa2.patch"
+  }
 }
