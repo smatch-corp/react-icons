@@ -28,8 +28,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
-          add-paths: |
-            src
+          add-paths: .
           commit-message: 'feat: import icons'
           branch: import-icons
           delete-branch: true
