@@ -34,7 +34,7 @@
   },
   "scripts": {
     "import": "rescript build -with-deps && node scripts/Main.mjs",
-    "cjs-postprocess": "renamer --find js --replace cjs dist/cjs/* && sed 's/\\.js/\\.cjs/g' dist/cjs/index.cjs",
+    "cjs-postprocess": "renamer --find js --replace cjs dist/cjs/* && sed -i 's/\\.js/\\.cjs/g' dist/cjs/index.cjs",
     "build": "yarn build:cjs && yarn build:esm && yarn build:dts",
     "build:esm": "tsc -p tsconfig.esm.json",
     "build:cjs": "tsc -p tsconfig.cjs.json && yarn cjs-postprocess",
