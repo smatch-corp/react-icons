@@ -21,9 +21,9 @@ jobs:
       - run: |
           yarn
           yarn version apply
-          yarn npm publish
+          yarn npm publish --access=public
         env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - uses: EndBug/add-and-commit@v9
         with:
