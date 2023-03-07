@@ -14,17 +14,17 @@ export default defineConfig({
     },
     outDir: 'dist',
     rollupOptions: {
-      external: id => {
-        return !id.startsWith('\0') && !id.startsWith('.') && !id.startsWith('/');
+      external: (id) => {
+        return (
+          !id.startsWith('\0') && !id.startsWith('.') && !id.startsWith('/')
+        );
       },
       output: {
         preserveModules: true,
         preserveModulesRoot: 'src',
       },
     },
-    sourcemap: true
+    sourcemap: true,
   },
-  plugins: [
-    dts(),
-  ],
+  plugins: [dts()],
 });
