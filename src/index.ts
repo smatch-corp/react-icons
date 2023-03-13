@@ -1,3 +1,4 @@
+export { IconAIProcessor } from './IconAIProcessor.js';
 export { IconAccountBoxRounded } from './IconAccountBoxRounded.js';
 export { IconAccountCircleRounded } from './IconAccountCircleRounded.js';
 export { IconAddCircleOutlineRounded } from './IconAddCircleOutlineRounded.js';
@@ -24,6 +25,7 @@ export { IconCheckRounded } from './IconCheckRounded.js';
 export { IconCircleNotificationsRounded } from './IconCircleNotificationsRounded.js';
 export { IconCloseRounded } from './IconCloseRounded.js';
 export { IconConstructionRounded } from './IconConstructionRounded.js';
+export { IconContentCopyRounded } from './IconContentCopyRounded.js';
 export { IconContentPasteGoRounded } from './IconContentPasteGoRounded.js';
 export { IconContentPasteRounded } from './IconContentPasteRounded.js';
 export { IconCorporateFareRounded } from './IconCorporateFareRounded.js';
