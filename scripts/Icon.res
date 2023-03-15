@@ -58,6 +58,7 @@ let convertToComponent = ((name, svg)) => {
     svg
     ->Js.String2.replaceByRe(%re("/fillOpacity={.+?}/g"), "")
     ->Js.String2.replaceByRe(%re(`/fill="((?!none).+?)"/g`), `fill="currentColor"`)
+    ->Js.String2.replaceByRe(%re(`/stroke="((?!none).+?)"/g`), `stroke="currentColor"`)
     ->Js.String2.replaceByRe(
       %re("/export default ForwardRef/"),
       `ForwardRef.displayName = '${name}'; export { ForwardRef as ${name} }`,
