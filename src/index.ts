@@ -137,6 +137,7 @@ export { IconTipText } from './IconTipText.js';
 export { IconTistory } from './IconTistory.js';
 export { IconVerifiedRounded } from './IconVerifiedRounded.js';
 export { IconVerifiedUserRounded } from './IconVerifiedUserRounded.js';
+export { IconWarningRounded } from './IconWarningRounded.js';
 export { IconWatchLaterRounded } from './IconWatchLaterRounded.js';
 export { IconWheretoVoteRounded } from './IconWheretoVoteRounded.js';
 export { IconWon } from './IconWon.js';
