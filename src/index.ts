@@ -133,6 +133,7 @@ export { IconSentimentSatisfiedRounded } from './IconSentimentSatisfiedRounded.j
 export { IconSentimentVeryDissatisfiedRounded } from './IconSentimentVeryDissatisfiedRounded.js';
 export { IconShareRounded } from './IconShareRounded.js';
 export { IconSmatchCorp } from './IconSmatchCorp.js';
+export { IconSortRounded } from './IconSortRounded.js';
 export { IconStarBorderRounded } from './IconStarBorderRounded.js';
 export { IconStarRounded } from './IconStarRounded.js';
 export { IconStarsRounded } from './IconStarsRounded.js';
