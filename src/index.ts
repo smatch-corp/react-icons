@@ -84,6 +84,7 @@ export { IconLocationPin } from './IconLocationPin.js';
 export { IconLoginRounded } from './IconLoginRounded.js';
 export { IconLogoutRounded } from './IconLogoutRounded.js';
 export { IconMailAlert } from './IconMailAlert.js';
+export { IconMailCircleRounded } from './IconMailCircleRounded.js';
 export { IconMailRounded } from './IconMailRounded.js';
 export { IconMenuRounded } from './IconMenuRounded.js';
 export { IconMoreVertRounded } from './IconMoreVertRounded.js';
