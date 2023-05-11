@@ -1,0 +1,6 @@
+import { forwardRef } from 'react';
+import type { SVGAttributes } from 'react';
+export const IconFilterList = forwardRef<SVGSVGElement, SVGAttributes<SVGSVGElement>>((props, ref) => {
+  return <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" ref={ref} {...props}><g clipPath="url(#clip0_3607_28080)"><path d="M21.49 11H14.5C14.08 11 13.85 11.47 14.1 11.8C15.27 13.29 16.99 15.5 16.99 15.5V18C16.99 18.55 17.44 19 17.99 19C18.54 19 18.99 18.55 18.99 18V15.5C18.99 15.5 20.71 13.29 21.88 11.8C22.14 11.47 21.9 11 21.48 11H21.49Z" fill="currentColor" /><path d="M11 17H3C2.45 17 2 17.45 2 18C2 18.55 2.45 19 3 19H11C11.55 19 12 18.55 12 18C12 17.45 11.55 17 11 17Z" fill="currentColor" /><path d="M3 7H21C21.55 7 22 6.55 22 6C22 5.45 21.55 5 21 5H3C2.45 5 2 5.45 2 6C2 6.55 2.45 7 3 7Z" fill="currentColor" /><path d="M11 11H3C2.45 11 2 11.45 2 12C2 12.55 2.45 13 3 13H11C11.55 13 12 12.55 12 12C12 11.45 11.55 11 11 11Z" fill="currentColor" /></g><defs><clipPath id="clip0_3607_28080"><rect width={24} height={24} fill="currentColor" /></clipPath></defs></svg>;
+});
+IconFilterList.displayName = "IconFilterList";
