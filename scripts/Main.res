@@ -12,7 +12,16 @@ let run = async () => {
   }
   Js.log("> 아이콘 컴포넌트 노드 불러옴")
 
-  let icons = result->Icon.arrayFromDict->Array.keep(Icon.isNotExist)
+  let args = Node.Process.argv->Array.sliceToEnd(2)
+  let isForceFlag = args->Js.Array2.some(arg => {
+    switch arg {
+    | "--force" => true
+    | _ => false
+    }
+  })
+  let iconPredicateFn = isForceFlag ? Icon.forceUpdate : Icon.isNotExist
+
+  let icons = result->Icon.arrayFromDict->Array.keep(iconPredicateFn)
   Js.log(`> 작업해야 하는 아이콘 수: ${icons->Array.length->Int.toString}개`)
 
   let images = switch await Figma.Request.QueryImages.requestWithArgs(icons) {

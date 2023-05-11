@@ -27,6 +27,8 @@ let isNotExist = ((_, name)) => {
   Node.Path.join([__dirname, "../src", name ++ ".tsx"])->Node.Fs.existsSync === false
 }
 
+let forceUpdate = (_: t) => true
+
 let downloadSvg = (images, icon) => {
   let (id, name) = icon
 

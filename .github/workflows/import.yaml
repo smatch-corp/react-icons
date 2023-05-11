@@ -1,7 +1,13 @@
 name: Run import icons
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      force_update:
+        type: boolean
+        description: 'Force update icons'
+        required: false
+        default: false
 
 jobs:
   import:
@@ -19,7 +25,16 @@ jobs:
       - run: |
           yarn import
           yarn version minor --deferred
-        id: import
+        if: ${{ github.event.inputs.force_update == 'false' }}
+        env:
+          FIGMA_API_TOKEN: ${{ secrets.FIGMA_API_TOKEN }}
+          FIGMA_FILE_ID: ${{ secrets.FIGMA_FILE_ID }}
+          FIGMA_ICON_FRAME_ID: ${{ secrets.FIGMA_ICON_FRAME_ID }}
+
+      - run: |
+          yarn import:force
+          yarn version minor --deferred
+        if: ${{ github.event.inputs.force_update == 'true' }}
         env:
           FIGMA_API_TOKEN: ${{ secrets.FIGMA_API_TOKEN }}
           FIGMA_FILE_ID: ${{ secrets.FIGMA_FILE_ID }}

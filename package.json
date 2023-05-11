@@ -36,6 +36,7 @@
   },
   "scripts": {
     "import": "rescript build -with-deps && node scripts/Main.mjs",
+    "import:force": "rescript build -with-deps && node scripts/Main.mjs --force",
     "build": "vite build",
     "prepack": "yarn build"
   },
