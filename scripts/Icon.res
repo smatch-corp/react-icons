@@ -1,3 +1,5 @@
+@module("fs") external mkdirSync: string => unit = "mkdirSync"
+
 type t = (string, string)
 type component = {name: string}
 
@@ -89,4 +91,10 @@ let updateIndex = () => {
 
   let path = Node.Path.join([path, "index.ts"])
   Node.Fs.writeFileAsUtf8Sync(path, index)
+}
+
+let resetSrc = () => {
+  let path = Node.Path.join([__dirname, "../src"])
+  path->Rimraf.nativeSync
+  path->mkdirSync
 }
