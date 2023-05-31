@@ -76,6 +76,8 @@ export { IconKeyboardArrowRightRounded } from './IconKeyboardArrowRightRounded.j
 export { IconKeyboardArrowRightRoundedSmall } from './IconKeyboardArrowRightRoundedSmall.js';
 export { IconKeyboardArrowUpRounded } from './IconKeyboardArrowUpRounded.js';
 export { IconKeyboardArrowUpRoundedSmall } from './IconKeyboardArrowUpRoundedSmall.js';
+export { IconKeyboardDoubleArrowLeftRounded } from './IconKeyboardDoubleArrowLeftRounded.js';
+export { IconKeyboardDoubleArrowRightRounded } from './IconKeyboardDoubleArrowRightRounded.js';
 export { IconLMComment } from './IconLMComment.js';
 export { IconLibraryAddCheckRounded } from './IconLibraryAddCheckRounded.js';
 export { IconListChecked } from './IconListChecked.js';
@@ -83,6 +85,7 @@ export { IconListEdit } from './IconListEdit.js';
 export { IconListEmpty } from './IconListEmpty.js';
 export { IconListFilter } from './IconListFilter.js';
 export { IconListSearch } from './IconListSearch.js';
+export { IconLoadingSpinner } from './IconLoadingSpinner.js';
 export { IconLocalFireDepartmentRounded } from './IconLocalFireDepartmentRounded.js';
 export { IconLocalParkingRounded } from './IconLocalParkingRounded.js';
 export { IconLocationCityRounded } from './IconLocationCityRounded.js';
