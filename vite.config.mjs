@@ -5,12 +5,12 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/index.ts',
-      formats: ['cjs', 'es'],
       fileName(format, entryName) {
         const ext = format === 'es' ? 'mjs' : 'cjs';
 
         return [entryName, ext].join('.');
       },
+      formats: ['cjs', 'es'],
     },
     outDir: 'dist',
     rollupOptions: {

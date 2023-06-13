@@ -2,12 +2,6 @@ name: Run import icons
 
 on:
   workflow_dispatch:
-    inputs:
-      force_update:
-        type: boolean
-        description: 'Force update icons'
-        required: false
-        default: false
 
 jobs:
   import:
@@ -18,27 +12,37 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
 
-      - run: yarn
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 8
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - run: pnpm install
 
       - run: |
-          yarn import
-          yarn version minor --deferred
-        if: ${{ github.event.inputs.force_update == 'false' }}
+          pnpm run import
         env:
           FIGMA_API_TOKEN: ${{ secrets.FIGMA_API_TOKEN }}
           FIGMA_FILE_ID: ${{ secrets.FIGMA_FILE_ID }}
-          FIGMA_ICON_FRAME_ID: ${{ secrets.FIGMA_ICON_FRAME_ID }}
-
-      - run: |
-          yarn import:force
-          yarn version minor --deferred
-        if: ${{ github.event.inputs.force_update == 'true' }}
-        env:
-          FIGMA_API_TOKEN: ${{ secrets.FIGMA_API_TOKEN }}
-          FIGMA_FILE_ID: ${{ secrets.FIGMA_FILE_ID }}
-          FIGMA_ICON_FRAME_ID: ${{ secrets.FIGMA_ICON_FRAME_ID }}
+          FIGMA_NODE_ID: ${{ secrets.FIGMA_NODE_ID }}
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
@@ -47,4 +51,4 @@ jobs:
           commit-message: 'feat: import icons'
           branch: import-icons
           delete-branch: true
-          title: 'feat: Update Icons'
+          title: 'feat: import Icons'
