@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      
+      - uses: fregante/setup-git-user@v2
 
       - uses: actions/setup-node@v3
         with:
@@ -24,6 +26,7 @@ jobs:
         with:
           version: 8
           run_install: false
+
 
       - name: Get pnpm store directory
         id: pnpm-cache
@@ -41,10 +44,12 @@ jobs:
 
       - run: pnpm install
 
+      - run: pnpm config set '//registry.npmjs.org/:_authToken' ${{ secrets.NPM_TOKEN }}
+
       - run: |
           pnpm release-it minor
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - uses: EndBug/add-and-commit@v9
