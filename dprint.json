@@ -3,7 +3,8 @@
     "quoteStyle": "preferSingle",
     "indentWidth": 2,
     "importDeclaration.sortNamedImports": "maintain",
-    "module.sortImportDeclarations": "maintain"
+    "module.sortImportDeclarations": "maintain",
+    "jsx.quoteStyle": "preferDouble"
   },
   "json": {
   },

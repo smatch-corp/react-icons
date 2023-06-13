@@ -19,6 +19,7 @@ module.exports = {
         typescript: {
           'importDeclaration.sortNamedImports': 'maintain',
           'indentWidth': 2,
+          'jsx.quoteStyle': 'preferDouble',
           'module.sortImportDeclarations': 'maintain',
           'quoteStyle': 'preferSingle',
         },
