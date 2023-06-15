@@ -141,6 +141,7 @@ export { IconRemoveCircleRounded } from './IconRemoveCircleRounded.js';
 export { IconRemoveRounded } from './IconRemoveRounded.js';
 export { IconReplayCircleFilledRounded } from './IconReplayCircleFilledRounded.js';
 export { IconReplayRounded } from './IconReplayRounded.js';
+export { IconRestartAltRounded } from './IconRestartAltRounded.js';
 export { IconRuleRounded } from './IconRuleRounded.js';
 export { IconSalesforce } from './IconSalesforce.js';
 export { IconSaveDesigned } from './IconSaveDesigned.js';
