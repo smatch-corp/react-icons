@@ -12,7 +12,7 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) =
         cy={0}
         gradientTransform="translate(12 12) scale(9)"
         gradientUnits="userSpaceOnUse"
-        id="paint0_angular_3714_33083"
+        id="paint0_angular_4229_32354"
         r={1}
       >
         <stop />
