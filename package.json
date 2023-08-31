@@ -52,7 +52,7 @@
         "test": "vitest",
         "import": "pnpm tsx script/index.ts && pnpm eslint --fix src",
         "import:force": "pnpm run import",
-        "build": "vite build",
+        "build": "unbuild",
         "prepack": "pnpm build"
     },
     "packageManager": "pnpm@8.6.0",
