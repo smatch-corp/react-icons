@@ -1,16 +1,16 @@
 {
-  "prettier.enable": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-    // "source.organizeImports": true
-  },
-  "eslint.codeActionsOnSave.mode": "all",
-  "eslint.format.enable": true,
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "[typescript]": {
-    "editor.defaultFormatter": "Jota0222.multi-formatter"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "Jota0222.multi-formatter"
-  }
+    "prettier.enable": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+        // "source.organizeImports": true
+    },
+    "eslint.codeActionsOnSave.mode": "all",
+    "eslint.format.enable": true,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "[typescript]": {
+        "editor.defaultFormatter": "dprint.dprint"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "dprint.dprint"
+    }
 }

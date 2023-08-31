@@ -1,12 +1,21 @@
-import { Ref, SVGProps, forwardRef } from 'react';
-const SvgComponent = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
-  <svg fill="none" height="1em" ref={ref} viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <path
-      d="M4 18H8C8.55 18 9 17.55 9 17C9 16.45 8.55 16 8 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18ZM3 7C3 7.55 3.45 8 4 8H20C20.55 8 21 7.55 21 7C21 6.45 20.55 6 20 6H4C3.45 6 3 6.45 3 7ZM4 13H14C14.55 13 15 12.55 15 12C15 11.45 14.55 11 14 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13Z"
-      fill="currentColor"
-    />
-  </svg>
+import type { SVGProps } from 'react';
+
+import { Ref, forwardRef } from 'react';
+const IconSortRounded = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
+    <svg
+        fill="none"
+        height="1em"
+        ref={ref}
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+        {...props}
+    >
+        <path
+            d="M4 18C3.71667 18 3.47917 17.9042 3.2875 17.7125C3.09583 17.5208 3 17.2833 3 17C3 16.7167 3.09583 16.4792 3.2875 16.2875C3.47917 16.0958 3.71667 16 4 16H8C8.28333 16 8.52083 16.0958 8.7125 16.2875C8.90417 16.4792 9 16.7167 9 17C9 17.2833 8.90417 17.5208 8.7125 17.7125C8.52083 17.9042 8.28333 18 8 18H4ZM4 13C3.71667 13 3.47917 12.9042 3.2875 12.7125C3.09583 12.5208 3 12.2833 3 12C3 11.7167 3.09583 11.4792 3.2875 11.2875C3.47917 11.0958 3.71667 11 4 11H14C14.2833 11 14.5208 11.0958 14.7125 11.2875C14.9042 11.4792 15 11.7167 15 12C15 12.2833 14.9042 12.5208 14.7125 12.7125C14.5208 12.9042 14.2833 13 14 13H4ZM4 8C3.71667 8 3.47917 7.90417 3.2875 7.7125C3.09583 7.52083 3 7.28333 3 7C3 6.71667 3.09583 6.47917 3.2875 6.2875C3.47917 6.09583 3.71667 6 4 6H20C20.2833 6 20.5208 6.09583 20.7125 6.2875C20.9042 6.47917 21 6.71667 21 7C21 7.28333 20.9042 7.52083 20.7125 7.7125C20.5208 7.90417 20.2833 8 20 8H4Z"
+            fill="currentColor"
+        />
+    </svg>
 );
-const ForwardRef = forwardRef(SvgComponent);
+const ForwardRef = forwardRef(IconSortRounded);
 export { ForwardRef as IconSortRounded };
-ForwardRef.displayName = 'IconSortRounded';

@@ -1,12 +1,21 @@
-import { Ref, SVGProps, forwardRef } from 'react';
-const SvgComponent = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
-  <svg fill="none" height="1em" ref={ref} viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <path
-      d="M20 4H4C2.89 4 2.01 4.89 2.01 6L2 18C2 19.11 2.89 20 4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4ZM19 18H5C4.45 18 4 17.55 4 17V12H20V17C20 17.55 19.55 18 19 18ZM20 8H4V7C4 6.45 4.45 6 5 6H19C19.55 6 20 6.45 20 7V8Z"
-      fill="currentColor"
-    />
-  </svg>
+import type { SVGProps } from 'react';
+
+import { Ref, forwardRef } from 'react';
+const IconPaymentRounded = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
+    <svg
+        fill="none"
+        height="1em"
+        ref={ref}
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+        {...props}
+    >
+        <path
+            d="M22 6V18C22 18.55 21.8042 19.0208 21.4125 19.4125C21.0208 19.8042 20.55 20 20 20H4C3.45 20 2.97917 19.8042 2.5875 19.4125C2.19583 19.0208 2 18.55 2 18V6C2 5.45 2.19583 4.97917 2.5875 4.5875C2.97917 4.19583 3.45 4 4 4H20C20.55 4 21.0208 4.19583 21.4125 4.5875C21.8042 4.97917 22 5.45 22 6ZM4 8H20V6H4V8ZM4 12V18H20V12H4Z"
+            fill="currentColor"
+        />
+    </svg>
 );
-const ForwardRef = forwardRef(SvgComponent);
+const ForwardRef = forwardRef(IconPaymentRounded);
 export { ForwardRef as IconPaymentRounded };
-ForwardRef.displayName = 'IconPaymentRounded';

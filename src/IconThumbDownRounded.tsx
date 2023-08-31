@@ -1,12 +1,21 @@
-import { Ref, SVGProps, forwardRef } from 'react';
-const SvgComponent = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
-  <svg fill="none" height="1em" ref={ref} viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <path
-      d="M10.88 21.94L16.41 16.4C16.78 16.03 16.99 15.52 16.99 14.99V5C16.99 3.9 16.09 3 14.99 3H6C5.2 3 4.48 3.48 4.17 4.21L0.909999 11.82C0.0599988 13.8 1.51 16 3.66 16H9.31L8.36 20.58C8.26 21.08 8.41 21.59 8.77 21.95C9.36 22.53 10.3 22.53 10.88 21.94ZM21 3C19.9 3 19 3.9 19 5V13C19 14.1 19.9 15 21 15C22.1 15 23 14.1 23 13V5C23 3.9 22.1 3 21 3Z"
-      fill="currentColor"
-    />
-  </svg>
+import type { SVGProps } from 'react';
+
+import { Ref, forwardRef } from 'react';
+const IconThumbDownRounded = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
+    <svg
+        fill="none"
+        height="1em"
+        ref={ref}
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+        {...props}
+    >
+        <path
+            d="M3 16C2.46667 16 2 15.8 1.6 15.4C1.2 15 1 14.5333 1 14V12C1 11.8833 1.0125 11.7583 1.0375 11.625C1.0625 11.4917 1.1 11.3667 1.15 11.25L4.15 4.2C4.3 3.86667 4.55 3.58333 4.9 3.35C5.25 3.11667 5.61667 3 6 3H14C14.55 3 15.0208 3.19583 15.4125 3.5875C15.8042 3.97917 16 4.45 16 5V15.175C16 15.4417 15.9458 15.6958 15.8375 15.9375C15.7292 16.1792 15.5833 16.3917 15.4 16.575L9.975 21.975C9.725 22.2083 9.42917 22.35 9.0875 22.4C8.74583 22.45 8.41667 22.3917 8.1 22.225C7.78333 22.0583 7.55417 21.825 7.4125 21.525C7.27083 21.225 7.24167 20.9167 7.325 20.6L8.45 16H3ZM20 3C20.55 3 21.0208 3.19583 21.4125 3.5875C21.8042 3.97917 22 4.45 22 5V14C22 14.55 21.8042 15.0208 21.4125 15.4125C21.0208 15.8042 20.55 16 20 16C19.45 16 18.9792 15.8042 18.5875 15.4125C18.1958 15.0208 18 14.55 18 14V5C18 4.45 18.1958 3.97917 18.5875 3.5875C18.9792 3.19583 19.45 3 20 3Z"
+            fill="currentColor"
+        />
+    </svg>
 );
-const ForwardRef = forwardRef(SvgComponent);
+const ForwardRef = forwardRef(IconThumbDownRounded);
 export { ForwardRef as IconThumbDownRounded };
-ForwardRef.displayName = 'IconThumbDownRounded';

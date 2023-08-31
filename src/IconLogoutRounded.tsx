@@ -1,16 +1,21 @@
-import { Ref, SVGProps, forwardRef } from 'react';
-const SvgComponent = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
-  <svg fill="none" height="1em" ref={ref} viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <path
-      d="M5 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H11C11.55 21 12 20.55 12 20C12 19.45 11.55 19 11 19H5V5Z"
-      fill="currentColor"
-    />
-    <path
-      d="M20.65 11.6495L17.86 8.85954C17.54 8.53954 17 8.75954 17 9.20954V10.9995H10C9.45 10.9995 9 11.4495 9 11.9995C9 12.5495 9.45 12.9995 10 12.9995H17V14.7895C17 15.2395 17.54 15.4595 17.85 15.1395L20.64 12.3495C20.84 12.1595 20.84 11.8395 20.65 11.6495Z"
-      fill="currentColor"
-    />
-  </svg>
+import type { SVGProps } from 'react';
+
+import { Ref, forwardRef } from 'react';
+const IconLogoutRounded = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
+    <svg
+        fill="none"
+        height="1em"
+        ref={ref}
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+        {...props}
+    >
+        <path
+            d="M5 21C4.45 21 3.97917 20.8042 3.5875 20.4125C3.19583 20.0208 3 19.55 3 19V5C3 4.45 3.19583 3.97917 3.5875 3.5875C3.97917 3.19583 4.45 3 5 3H11C11.2833 3 11.5208 3.09583 11.7125 3.2875C11.9042 3.47917 12 3.71667 12 4C12 4.28333 11.9042 4.52083 11.7125 4.7125C11.5208 4.90417 11.2833 5 11 5H5V19H11C11.2833 19 11.5208 19.0958 11.7125 19.2875C11.9042 19.4792 12 19.7167 12 20C12 20.2833 11.9042 20.5208 11.7125 20.7125C11.5208 20.9042 11.2833 21 11 21H5ZM17.175 13H10C9.71667 13 9.47917 12.9042 9.2875 12.7125C9.09583 12.5208 9 12.2833 9 12C9 11.7167 9.09583 11.4792 9.2875 11.2875C9.47917 11.0958 9.71667 11 10 11H17.175L15.3 9.125C15.1167 8.94167 15.025 8.71667 15.025 8.45C15.025 8.18333 15.1167 7.95 15.3 7.75C15.4833 7.55 15.7167 7.44583 16 7.4375C16.2833 7.42917 16.525 7.525 16.725 7.725L20.3 11.3C20.5 11.5 20.6 11.7333 20.6 12C20.6 12.2667 20.5 12.5 20.3 12.7L16.725 16.275C16.525 16.475 16.2875 16.5708 16.0125 16.5625C15.7375 16.5542 15.5 16.45 15.3 16.25C15.1167 16.05 15.0292 15.8125 15.0375 15.5375C15.0458 15.2625 15.1417 15.0333 15.325 14.85L17.175 13Z"
+            fill="currentColor"
+        />
+    </svg>
 );
-const ForwardRef = forwardRef(SvgComponent);
+const ForwardRef = forwardRef(IconLogoutRounded);
 export { ForwardRef as IconLogoutRounded };
-ForwardRef.displayName = 'IconLogoutRounded';

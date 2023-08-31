@@ -1,0 +1,670 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`피그마 파일에서 컴포넌트 정보를 가져올 수 있다. 1`] = `
+[
+  {
+    "name": "ManageAccounts",
+    "node_id": "4574:2850",
+  },
+  {
+    "name": "ManageAccountsFill",
+    "node_id": "4574:2854",
+  },
+  {
+    "name": "EditFill",
+    "node_id": "4385:2272",
+  },
+  {
+    "name": "ScheduleSendFill",
+    "node_id": "4675:628",
+  },
+  {
+    "name": "Cached",
+    "node_id": "4680:645",
+  },
+  {
+    "name": "ListEmpty",
+    "node_id": "4229:32377",
+  },
+  {
+    "name": "InventoryRounded",
+    "node_id": "4229:31964",
+  },
+  {
+    "name": "CheckCircleOutlineRounded",
+    "node_id": "4229:31954",
+  },
+  {
+    "name": "NotListedLocationRounded",
+    "node_id": "4229:31961",
+  },
+  {
+    "name": "RadioBlankDesigned",
+    "node_id": "4229:32380",
+  },
+  {
+    "name": "LocationPin",
+    "node_id": "4229:32376",
+  },
+  {
+    "name": "StreetView",
+    "node_id": "4229:32375",
+  },
+  {
+    "name": "RadioDesigned",
+    "node_id": "4229:32373",
+  },
+  {
+    "name": "LMComment",
+    "node_id": "4229:32371",
+  },
+  {
+    "name": "IndeterminateCheckBoxRoundedDesigned",
+    "node_id": "4229:32370",
+  },
+  {
+    "name": "ListFilter",
+    "node_id": "4229:32368",
+  },
+  {
+    "name": "CheckBoxRoundedDesigned",
+    "node_id": "4229:32367",
+  },
+  {
+    "name": "PDFFile",
+    "node_id": "4229:32362",
+  },
+  {
+    "name": "MapFilter",
+    "node_id": "4229:32361",
+  },
+  {
+    "name": "ListSearch",
+    "node_id": "4229:32358",
+  },
+  {
+    "name": "DistanceMeter",
+    "node_id": "4229:32357",
+  },
+  {
+    "name": "ClickButton",
+    "node_id": "4229:32356",
+  },
+  {
+    "name": "ListEdit",
+    "node_id": "4229:32355",
+  },
+  {
+    "name": "EventRounded",
+    "node_id": "4229:32048",
+  },
+  {
+    "name": "WheretoVoteRounded",
+    "node_id": "4229:32044",
+  },
+  {
+    "name": "ImageNotSupportedRounded",
+    "node_id": "4229:32022",
+  },
+  {
+    "name": "LocationOffRounded",
+    "node_id": "4229:32030",
+  },
+  {
+    "name": "MoreVertRounded",
+    "node_id": "4229:32012",
+  },
+  {
+    "name": "KeyboardArrowDownRounded",
+    "node_id": "4229:32002",
+  },
+  {
+    "name": "CheckRounded",
+    "node_id": "4229:32006",
+  },
+  {
+    "name": "AddRounded",
+    "node_id": "4229:31989",
+  },
+  {
+    "name": "AddCircleOutlineRounded",
+    "node_id": "4229:31987",
+  },
+  {
+    "name": "RemoveCircleRounded",
+    "node_id": "4229:31980",
+  },
+  {
+    "name": "SentimentSatisfiedRounded",
+    "node_id": "4229:31974",
+  },
+  {
+    "name": "LocationCityRounded",
+    "node_id": "4229:31968",
+  },
+  {
+    "name": "LocalFireDepartmentRounded",
+    "node_id": "4229:31963",
+  },
+  {
+    "name": "DateRangeRounded",
+    "node_id": "4229:31967",
+  },
+  {
+    "name": "AddPhotoAlternateRounded",
+    "node_id": "4229:31946",
+  },
+  {
+    "name": "SouthWestRounded",
+    "node_id": "4229:31939",
+  },
+  {
+    "name": "NorthEastRounded",
+    "node_id": "4229:31938",
+  },
+  {
+    "name": "SouthEastRounded",
+    "node_id": "4229:31936",
+  },
+  {
+    "name": "SortRounded",
+    "node_id": "4229:31941",
+  },
+  {
+    "name": "MenuRounded",
+    "node_id": "4229:31998",
+  },
+  {
+    "name": "WarningFillRounded",
+    "node_id": "4229:31953",
+  },
+  {
+    "name": "BoltRounded",
+    "node_id": "4229:31951",
+  },
+  {
+    "name": "KeyboardArrowRightRounded",
+    "node_id": "4229:32001",
+  },
+  {
+    "name": "ContentPasteRounded",
+    "node_id": "4229:32029",
+  },
+  {
+    "name": "KeyboardDoubleArrowRightRounded",
+    "node_id": "4229:32025",
+  },
+  {
+    "name": "ListChecked",
+    "node_id": "4229:32359",
+  },
+  {
+    "name": "ZoomOutRounded",
+    "node_id": "4229:31942",
+  },
+  {
+    "name": "NorthWestRounded",
+    "node_id": "4229:31937",
+  },
+  {
+    "name": "ApartmentRounded",
+    "node_id": "4229:31969",
+  },
+  {
+    "name": "ContentCopyRounded",
+    "node_id": "4229:31947",
+  },
+  {
+    "name": "EventNoteRounded",
+    "node_id": "4229:32046",
+  },
+  {
+    "name": "RemoveCircleOutlineRounded",
+    "node_id": "4229:31991",
+  },
+  {
+    "name": "RemoveRounded",
+    "node_id": "4229:31978",
+  },
+  {
+    "name": "CancelRounded",
+    "node_id": "4229:32034",
+  },
+  {
+    "name": "ContentPasteGoRounded",
+    "node_id": "4229:32031",
+  },
+  {
+    "name": "PaymentRounded",
+    "node_id": "4229:31995",
+  },
+  {
+    "name": "CloseRounded",
+    "node_id": "4229:32015",
+  },
+  {
+    "name": "PersonFill",
+    "node_id": "4229:32027",
+  },
+  {
+    "name": "NewShort",
+    "node_id": "4229:32398",
+  },
+  {
+    "name": "LoginRounded",
+    "node_id": "4229:32005",
+  },
+  {
+    "name": "LoadingSpinner",
+    "node_id": "4229:32354",
+  },
+  {
+    "name": "EmptyCheckList",
+    "node_id": "4229:32360",
+  },
+  {
+    "name": "MailCircleRounded",
+    "node_id": "4229:32379",
+  },
+  {
+    "name": "NotificationImportantRounded",
+    "node_id": "4229:31983",
+  },
+  {
+    "name": "SmatchCorp",
+    "node_id": "4229:32387",
+  },
+  {
+    "name": "KeyboardArrowLeftRounded",
+    "node_id": "4229:32023",
+  },
+  {
+    "name": "CheckBoxOutlineBlankRoundedDesigned",
+    "node_id": "4229:32382",
+  },
+  {
+    "name": "ErrorRounded",
+    "node_id": "4229:32007",
+  },
+  {
+    "name": "NewLMComment",
+    "node_id": "4229:32372",
+  },
+  {
+    "name": "Salesforce",
+    "node_id": "4229:32374",
+  },
+  {
+    "name": "ArrowBackRounded",
+    "node_id": "4229:32043",
+  },
+  {
+    "name": "CalendarToday",
+    "node_id": "4229:31935",
+  },
+  {
+    "name": "MailRounded",
+    "node_id": "4229:32019",
+  },
+  {
+    "name": "KeyboardArrowUpRounded",
+    "node_id": "4229:32039",
+  },
+  {
+    "name": "RuleRounded",
+    "node_id": "4229:31952",
+  },
+  {
+    "name": "ControlPointDuplicateRounded",
+    "node_id": "4229:32417",
+  },
+  {
+    "name": "GroupsFill",
+    "node_id": "4227:30723",
+  },
+  {
+    "name": "EditRounded",
+    "node_id": "4229:31943",
+  },
+  {
+    "name": "OpeninNewRounded",
+    "node_id": "4229:32017",
+  },
+  {
+    "name": "Won",
+    "node_id": "4229:32381",
+  },
+  {
+    "name": "HistoryRounded",
+    "node_id": "4229:32433",
+  },
+  {
+    "name": "Process",
+    "node_id": "4229:32383",
+  },
+  {
+    "name": "WonCircle",
+    "node_id": "4229:32378",
+  },
+  {
+    "name": "ProposalArrived",
+    "node_id": "4229:32366",
+  },
+  {
+    "name": "QuestionOutlineRounded",
+    "node_id": "4229:32369",
+  },
+  {
+    "name": "NaverBlog",
+    "node_id": "4229:32384",
+  },
+  {
+    "name": "ProposalList",
+    "node_id": "4229:32363",
+  },
+  {
+    "name": "InfoCircle",
+    "node_id": "4229:32364",
+  },
+  {
+    "name": "ProposalQuick",
+    "node_id": "4229:32386",
+  },
+  {
+    "name": "ProposalAdded",
+    "node_id": "4229:32365",
+  },
+  {
+    "name": "UpdateRounded",
+    "node_id": "4229:32420",
+  },
+  {
+    "name": "DeleteRounded",
+    "node_id": "4229:32436",
+  },
+  {
+    "name": "FileDownloadRounded",
+    "node_id": "4229:32008",
+  },
+  {
+    "name": "ShareRounded",
+    "node_id": "4229:32018",
+  },
+  {
+    "name": "SendRounded",
+    "node_id": "4229:31945",
+  },
+  {
+    "name": "SendFillRounded",
+    "node_id": "4229:32454",
+  },
+  {
+    "name": "LockRounded",
+    "node_id": "4229:32457",
+  },
+  {
+    "name": "BookmarkRounded",
+    "node_id": "4229:32463",
+  },
+  {
+    "name": "BookmarkFillRounded",
+    "node_id": "4229:32462",
+  },
+  {
+    "name": "CheckCircleRounded",
+    "node_id": "4229:32037",
+  },
+  {
+    "name": "LinkRounded",
+    "node_id": "4229:32473",
+  },
+  {
+    "name": "PublishedWithChangesRounded",
+    "node_id": "4229:32492",
+  },
+  {
+    "name": "CorporateFareRounded",
+    "node_id": "4229:31966",
+  },
+  {
+    "name": "AddCircleRounded",
+    "node_id": "4229:31982",
+  },
+  {
+    "name": "RefreshRounded",
+    "node_id": "4229:32503",
+  },
+  {
+    "name": "PhonelinkEraseRounded",
+    "node_id": "4238:32519",
+  },
+  {
+    "name": "TodayRounded",
+    "node_id": "4238:32546",
+  },
+  {
+    "name": "EventAvailableRounded",
+    "node_id": "4229:32041",
+  },
+  {
+    "name": "EventRepeatRounded",
+    "node_id": "4229:32045",
+  },
+  {
+    "name": "EventBusyRounded",
+    "node_id": "4229:32042",
+  },
+  {
+    "name": "AddAPhotoFillRounded",
+    "node_id": "4238:32549",
+  },
+  {
+    "name": "UploadRounded",
+    "node_id": "4238:32558",
+  },
+  {
+    "name": "SwapVertRounded",
+    "node_id": "4238:32561",
+  },
+  {
+    "name": "FilterAltRounded",
+    "node_id": "4229:32009",
+  },
+  {
+    "name": "SearchRounded",
+    "node_id": "4238:32568",
+  },
+  {
+    "name": "DirectionsSubwayFilledRounded",
+    "node_id": "4229:31972",
+  },
+  {
+    "name": "BorderColorRounded",
+    "node_id": "4229:31984",
+  },
+  {
+    "name": "MyLocationRounded",
+    "node_id": "4229:32021",
+  },
+  {
+    "name": "ErrorOutlineRounded",
+    "node_id": "4229:32024",
+  },
+  {
+    "name": "InfoRounded",
+    "node_id": "4229:32033",
+  },
+  {
+    "name": "AddLocationRounded",
+    "node_id": "4229:32036",
+  },
+  {
+    "name": "LocationOnRounded",
+    "node_id": "4229:32047",
+  },
+  {
+    "name": "Group",
+    "node_id": "4376:38078",
+  },
+  {
+    "name": "NotificationsRounded",
+    "node_id": "4229:32035",
+  },
+  {
+    "name": "Undo",
+    "node_id": "4380:1126",
+  },
+  {
+    "name": "DashboardCustomizeFill",
+    "node_id": "4376:39118",
+  },
+  {
+    "name": "Mail",
+    "node_id": "4376:37836",
+  },
+  {
+    "name": "VerifiedUserRounded",
+    "node_id": "4229:32013",
+  },
+  {
+    "name": "ThumbUpRounded",
+    "node_id": "4229:32026",
+  },
+  {
+    "name": "PictureasPdfRounded",
+    "node_id": "4229:31965",
+  },
+  {
+    "name": "PersonSearchRounded",
+    "node_id": "4229:31985",
+  },
+  {
+    "name": "QuestionRounded",
+    "node_id": "4229:32385",
+  },
+  {
+    "name": "StarRounded",
+    "node_id": "4229:31992",
+  },
+  {
+    "name": "KeyboardDoubleArrowLeftRounded",
+    "node_id": "4229:31990",
+  },
+  {
+    "name": "ConstructionRounded",
+    "node_id": "4229:31956",
+  },
+  {
+    "name": "BalanceRounded",
+    "node_id": "4229:31981",
+  },
+  {
+    "name": "CircleNotificationsRounded",
+    "node_id": "4229:32020",
+  },
+  {
+    "name": "ArrowForwardRounded",
+    "node_id": "4229:32011",
+  },
+  {
+    "name": "ArrowUpwardRounded",
+    "node_id": "4229:32004",
+  },
+  {
+    "name": "NotificationsActiveRounded",
+    "node_id": "4229:31988",
+  },
+  {
+    "name": "StarsRounded",
+    "node_id": "4229:32032",
+  },
+  {
+    "name": "VerifiedRounded",
+    "node_id": "4229:32010",
+  },
+  {
+    "name": "ZoomInRounded",
+    "node_id": "4229:32016",
+  },
+  {
+    "name": "RestartAltRounded",
+    "node_id": "4229:31976",
+  },
+  {
+    "name": "FavoriteBorderRounded",
+    "node_id": "4229:32000",
+  },
+  {
+    "name": "ThumbDownRounded",
+    "node_id": "4229:31994",
+  },
+  {
+    "name": "MapRounded",
+    "node_id": "4229:31940",
+  },
+  {
+    "name": "LogoutRounded",
+    "node_id": "4229:31949",
+  },
+  {
+    "name": "FormatLineSpacingRounded",
+    "node_id": "4229:31950",
+  },
+  {
+    "name": "FavoriteRounded",
+    "node_id": "4229:31997",
+  },
+  {
+    "name": "AssignmentIndRounded",
+    "node_id": "4229:32040",
+  },
+  {
+    "name": "ArrowDownwardRounded",
+    "node_id": "4229:32028",
+  },
+  {
+    "name": "StarBorderRounded",
+    "node_id": "4229:31993",
+  },
+  {
+    "name": "NotificationsOffRounded",
+    "node_id": "4229:31957",
+  },
+  {
+    "name": "HandShakeRounded",
+    "node_id": "4229:32399",
+  },
+  {
+    "name": "ReplayRounded",
+    "node_id": "4229:31973",
+  },
+  {
+    "name": "TimerRounded",
+    "node_id": "4229:31970",
+  },
+  {
+    "name": "OfflineBoltRounded",
+    "node_id": "4229:31958",
+  },
+  {
+    "name": "VisibilityOffRounded",
+    "node_id": "4229:31996",
+  },
+  {
+    "name": "VisibilityRounded",
+    "node_id": "4229:31999",
+  },
+  {
+    "name": "DragIndicatorRounded",
+    "node_id": "4229:31948",
+  },
+  {
+    "name": "LocalParkingRounded",
+    "node_id": "4229:31960",
+  },
+  {
+    "name": "Steppers",
+    "node_id": "4689:52",
+  },
+]
+`;

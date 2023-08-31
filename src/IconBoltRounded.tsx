@@ -1,12 +1,21 @@
-import { Ref, SVGProps, forwardRef } from 'react';
-const SvgComponent = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
-  <svg fill="none" height="1em" ref={ref} viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <path
-      d="M10.67 21C10.32 21 10.05 20.69 10.1 20.34L11 14H7.5C6.62 14 7.17 13.25 7.19 13.22C8.45 10.99 10.34 7.69 12.84 3.29C12.94 3.11 13.14 3 13.34 3C13.69 3 13.96 3.31 13.91 3.66L13.01 10H16.52C16.92 10 17.14 10.19 16.92 10.66C13.63 16.4 11.72 19.75 11.17 20.71C11.07 20.89 10.88 21 10.67 21Z"
-      fill="currentColor"
-    />
-  </svg>
+import type { SVGProps } from 'react';
+
+import { Ref, forwardRef } from 'react';
+const IconBoltRounded = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
+    <svg
+        fill="none"
+        height="1em"
+        ref={ref}
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+        {...props}
+    >
+        <path
+            d="M9 15.0003H5.9C5.5 15.0003 5.20417 14.8212 5.0125 14.4628C4.82083 14.1045 4.84167 13.7587 5.075 13.4253L12.55 2.67533C12.7167 2.442 12.9333 2.2795 13.2 2.18783C13.4667 2.09616 13.7417 2.10033 14.025 2.20033C14.3083 2.30033 14.5167 2.47533 14.65 2.72533C14.7833 2.97533 14.8333 3.242 14.8 3.52533L14 10.0003H17.875C18.3083 10.0003 18.6125 10.192 18.7875 10.5753C18.9625 10.9587 18.9083 11.317 18.625 11.6503L10.4 21.5003C10.2167 21.717 9.99167 21.8587 9.725 21.9253C9.45833 21.992 9.2 21.967 8.95 21.8503C8.7 21.7337 8.50417 21.5545 8.3625 21.3128C8.22083 21.0712 8.16667 20.8087 8.2 20.5253L9 15.0003Z"
+            fill="currentColor"
+        />
+    </svg>
 );
-const ForwardRef = forwardRef(SvgComponent);
+const ForwardRef = forwardRef(IconBoltRounded);
 export { ForwardRef as IconBoltRounded };
-ForwardRef.displayName = 'IconBoltRounded';

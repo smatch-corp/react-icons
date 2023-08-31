@@ -1,12 +1,21 @@
-import { Ref, SVGProps, forwardRef } from 'react';
-const SvgComponent = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
-  <svg fill="none" height="1em" ref={ref} viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <path
-      d="M13.12 2.05997L7.58 7.59997C7.21 7.96997 7 8.47997 7 9.00997V19C7 20.1 7.9 21 9 21H18C18.8 21 19.52 20.52 19.84 19.79L23.1 12.18C23.94 10.2 22.49 7.99997 20.34 7.99997H14.69L15.64 3.41997C15.74 2.91997 15.59 2.40997 15.23 2.04997C14.64 1.46997 13.7 1.46997 13.12 2.05997ZM3 21C4.1 21 5 20.1 5 19V11C5 9.89997 4.1 8.99997 3 8.99997C1.9 8.99997 1 9.89997 1 11V19C1 20.1 1.9 21 3 21Z"
-      fill="currentColor"
-    />
-  </svg>
+import type { SVGProps } from 'react';
+
+import { Ref, forwardRef } from 'react';
+const IconThumbUpRounded = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
+    <svg
+        fill="none"
+        height="1em"
+        ref={ref}
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+        {...props}
+    >
+        <path
+            d="M10 21.0003C9.45 21.0003 8.97917 20.8045 8.5875 20.4128C8.19583 20.0212 8 19.5503 8 19.0003V8.82532C8 8.55865 8.05417 8.30448 8.1625 8.06282C8.27083 7.82115 8.41667 7.60865 8.6 7.42532L14.025 2.02532C14.275 1.79198 14.5708 1.65032 14.9125 1.60032C15.2542 1.55032 15.5833 1.60865 15.9 1.77532C16.2167 1.94198 16.4458 2.17532 16.5875 2.47532C16.7292 2.77532 16.7583 3.08365 16.675 3.40032L15.55 8.00032H21C21.5333 8.00032 22 8.20032 22.4 8.60032C22.8 9.00032 23 9.46698 23 10.0003V12.0003C23 12.117 22.9875 12.242 22.9625 12.3753C22.9375 12.5086 22.9 12.6336 22.85 12.7503L19.85 19.8003C19.7 20.1336 19.45 20.417 19.1 20.6503C18.75 20.8836 18.3833 21.0003 18 21.0003H10ZM4 21.0003C3.45 21.0003 2.97917 20.8045 2.5875 20.4128C2.19583 20.0212 2 19.5503 2 19.0003V10.0003C2 9.45032 2.19583 8.97948 2.5875 8.58782C2.97917 8.19615 3.45 8.00032 4 8.00032C4.55 8.00032 5.02083 8.19615 5.4125 8.58782C5.80417 8.97948 6 9.45032 6 10.0003V19.0003C6 19.5503 5.80417 20.0212 5.4125 20.4128C5.02083 20.8045 4.55 21.0003 4 21.0003Z"
+            fill="currentColor"
+        />
+    </svg>
 );
-const ForwardRef = forwardRef(SvgComponent);
+const ForwardRef = forwardRef(IconThumbUpRounded);
 export { ForwardRef as IconThumbUpRounded };
-ForwardRef.displayName = 'IconThumbUpRounded';

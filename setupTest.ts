@@ -1,15 +1,17 @@
 import { afterAll, afterEach, beforeAll } from 'vitest';
 
-import { server } from './scripts/tests/server.js';
+import { server } from './script/tests/server';
 
 beforeAll(() => {
-  server.listen();
+    server.listen({
+        onUnhandledRequest: 'error',
+    });
 });
 
 afterEach(() => {
-  server.resetHandlers();
+    server.resetHandlers();
 });
 
 afterAll(() => {
-  server.close();
+    server.close();
 });
