@@ -34,7 +34,7 @@ await Promise.all(images.map(async image => {
 
     console.log(`컴포넌트 ${reactComponent.componentName} 변환 완료`);
 
-    entryFileContent += `export { ${reactComponent.componentName} } from './${reactComponent.componentName}.js';\n`;
+    entryFileContent += `export { ${reactComponent.componentName} } from './${reactComponent.componentName}';\n`;
 }));
 
 await fse.writeFile(entryFilePath, entryFileContent);
