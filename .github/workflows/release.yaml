@@ -50,4 +50,4 @@ jobs:
           pnpm release-it minor
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.SMATCH_NPM_TOKEN }}
