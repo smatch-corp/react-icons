@@ -44,7 +44,7 @@ jobs:
 
       - run: pnpm install
 
-      - run: pnpm config set '//registry.npmjs.org/:_authToken' ${{ secrets.NPM_TOKEN }}
+      - run: pnpm config set '//registry.npmjs.org/:_authToken' ${{ secrets.SMATCH_NPM_TOKEN }}
 
       - run: |
           pnpm release-it minor
