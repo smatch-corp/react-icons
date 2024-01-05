@@ -1,0 +1,5 @@
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+const IconBoolean = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" ref={ref} {...props}><path fillRule="evenodd" clipRule="evenodd" d="M22 12.0001C22 14.4547 20.0102 16.4446 17.5556 16.4446C15.101 16.4446 13.1111 14.4547 13.1111 12.0001C13.1111 9.54551 15.101 7.55566 17.5556 7.55566C20.0102 7.55566 22 9.54551 22 12.0001ZM10.8889 12.0002C10.8889 14.4548 8.89904 16.4447 6.44444 16.4447C3.98985 16.4447 2 14.4548 2 12.0002C2 9.54562 3.98985 7.55577 6.44444 7.55577C8.89904 7.55577 10.8889 9.54562 10.8889 12.0002ZM6.44444 14.2223C7.67174 14.2223 8.66667 13.2274 8.66667 12.0001C8.66667 10.7728 7.67174 9.77789 6.44444 9.77789C5.21715 9.77789 4.22222 10.7728 4.22222 12.0001C4.22222 13.2274 5.21715 14.2223 6.44444 14.2223Z" fill="currentColor" /></svg>;
+const ForwardRef = forwardRef(IconBoolean);
+export { ForwardRef as IconBoolean };

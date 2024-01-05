@@ -1,0 +1,5 @@
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+const IconStat1 = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" ref={ref} {...props}><path d="M12 10.8004L8.1 14.6754C7.91667 14.8587 7.6875 14.9546 7.4125 14.9629C7.1375 14.9712 6.9 14.8754 6.7 14.6754C6.51667 14.4921 6.425 14.2587 6.425 13.9754C6.425 13.6921 6.51667 13.4587 6.7 13.2754L11.3 8.67539C11.4 8.57539 11.5083 8.50456 11.625 8.46289C11.7417 8.42122 11.8667 8.40039 12 8.40039C12.1333 8.40039 12.2583 8.42122 12.375 8.46289C12.4917 8.50456 12.6 8.57539 12.7 8.67539L17.3 13.2754C17.4833 13.4587 17.5792 13.6879 17.5875 13.9629C17.5958 14.2379 17.5 14.4754 17.3 14.6754C17.1167 14.8587 16.8833 14.9504 16.6 14.9504C16.3167 14.9504 16.0833 14.8587 15.9 14.6754L12 10.8004Z" fill="currentColor" /></svg>;
+const ForwardRef = forwardRef(IconStat1);
+export { ForwardRef as IconStat1 };
