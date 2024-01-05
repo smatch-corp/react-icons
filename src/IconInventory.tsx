@@ -1,0 +1,5 @@
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+const IconInventory = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" ref={ref} {...props}><path d="M5 5H7V6C7 7.1 7.9 8 9 8H15C16.1 8 17 7.1 17 6V5H19V10H21V5C21 3.9 20.1 3 19 3H14.82C14.4 1.84 13.3 1 12 1C10.7 1 9.6 1.84 9.18 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H11V19H5V5ZM12 3C12.55 3 13 3.45 13 4C13 4.55 12.55 5 12 5C11.45 5 11 4.55 11 4C11 3.45 11.45 3 12 3Z" fill="currentColor" /><path d="M21.75 12.2499C21.34 11.8399 20.66 11.8399 20.25 12.2499L15.51 16.9999L13.25 14.7499C12.84 14.3399 12.17 14.3399 11.75 14.7499C11.34 15.1599 11.34 15.8399 11.75 16.2499L14.8 19.2899C15.19 19.6799 15.82 19.6799 16.21 19.2899L21.74 13.7499C22.16 13.3399 22.16 12.6599 21.75 12.2499Z" fill="currentColor" /></svg>;
+const ForwardRef = forwardRef(IconInventory);
+export { ForwardRef as IconInventory };
