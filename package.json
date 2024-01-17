@@ -13,7 +13,6 @@
     ],
     "main": "./dist/index.mjs",
     "module": "./dist/index.legacy-esm.mjs",
-    "type": "module",
     "types": "./dist/index.d.mts",
     "exports": {
         "import": {
