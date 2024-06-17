@@ -1,0 +1,5 @@
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+const IconArrowForwardIOS = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" ref={ref} {...props}><path d="M14.475 12L7.125 4.65C6.875 4.4 6.75417 4.10417 6.7625 3.7625C6.77084 3.42083 6.9 3.125 7.15 2.875C7.4 2.625 7.69584 2.5 8.0375 2.5C8.37917 2.5 8.675 2.625 8.925 2.875L16.6 10.575C16.8 10.775 16.95 11 17.05 11.25C17.15 11.5 17.2 11.75 17.2 12C17.2 12.25 17.15 12.5 17.05 12.75C16.95 13 16.8 13.225 16.6 13.425L8.9 21.125C8.65 21.375 8.35834 21.4958 8.025 21.4875C7.69167 21.4792 7.4 21.35 7.15 21.1C6.9 20.85 6.775 20.5542 6.775 20.2125C6.775 19.8708 6.9 19.575 7.15 19.325L14.475 12Z" fill="currentColor" /></svg>;
+const ForwardRef = forwardRef(IconArrowForwardIOS);
+export { ForwardRef as IconArrowForwardIOS };
