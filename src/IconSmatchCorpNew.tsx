@@ -1,0 +1,5 @@
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+const IconSmatchCorpNew = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" ref={ref} {...props}><path fillRule="evenodd" clipRule="evenodd" d="M10.1524 11.0053C9.45767 11.6765 8.51848 12.0502 7.53696 12.0502H5.20247V16.7184H8.30093C9.28053 16.7184 10.2216 16.3428 10.9164 15.6754L13.8456 12.9945C14.5404 12.3233 15.4795 11.9496 16.4611 11.9496H16.463H18.7975V7.28125H21.9999V15.231H17.8083C16.8267 15.231 15.8875 15.6066 15.1928 16.2759L12.2636 18.9568C11.5688 19.6224 10.6277 19.9998 9.64812 19.9998H5.20239V16.7185H2V8.76875H6.18977C7.17129 8.76875 8.11048 8.3932 8.80524 7.7239L11.7344 5.04299C12.4292 4.37741 13.3703 4 14.3499 4H18.7956V7.28142H15.6971C14.7175 7.28142 13.7764 7.65697 13.0816 8.32441L10.1524 11.0053Z" fill="currentColor" /></svg>;
+const ForwardRef = forwardRef(IconSmatchCorpNew);
+export { ForwardRef as IconSmatchCorpNew };
